@@ -10,8 +10,9 @@
       <a-asset-item id="smiley" src="https://cdn.rawgit.com/KhronosGroup/glTF-Sample-Models/9176d098/1.0/SmilingFace/glTF/SmilingFace.gltf"></a-asset-item>
     </a-assets>
         <a-marker type='pattern' url='https://raw.githubusercontent.com/pavel4701/artest2/master/pattern-marker%20(8).patt'>
-      <a-entity gltf-model="#smiley" rotation= "180 0 0">
-      </a-entity>
+    <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
+  <a-entity position="5 0 0"></a-entity>
+</a-entity>
   	</a-marker>
   	<a-entity camera></a-entity>
     </a-scene>
